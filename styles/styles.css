@@ -34,7 +34,7 @@
     text-align: center;
 }
 #date {
-    font-weight: normal;
+    font-weight: bolder;
 }
 
 /* ------------------------- Ende Header bereich --------------------- */
@@ -155,6 +155,10 @@ ul#todoList {
     color: #d9d9d9;
     text-decoration: line-through;
 }
+
+/* .liElement .completed {
+    width: 80%;
+} */
 .todoText:focus {
     outline: none;
 }
