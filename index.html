@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e82f145924.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>TODO APP WBS CAMPUS</title>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>TODO </h1>
+        <p id="date">Frietag, 21 Oktober 2022</p>
+    </header>
+
+    <main>
+        <section class="TaskAdd-section">
+            <div id="add-section">
+                <input id="neuTodo" name="neuToDo" type="text" placeholder="Eine Aufgabe hinzufügen">
+                <button id="addTodo" value="addToDo" type="button"><i class="fa-light fa-plus"></i> </button>
+            </div>
+        </section>
+
+        <section class="tasks-section">
+            <div class="taskFilter">
+
+                <ul id="filters">
+                    <li>
+                        <p class="todoCount">Alle Aufgabe : <strong>0</strong> </p>
+                    </li>
+
+                    <li>
+                        <p class="notcompletedTodoCount" href="#">Übrige Aufgaben : <strong>0</strong></p>
+                    </li>
+                    <li>
+                        <p class="completedTodoCount" href="#">Erledigte Aufgaben : <strong>0</strong></p>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+            <div class=" taskList">
+                <ul id="todoList" class="todoList">
+                    <!-- <li class="liElement">
+                        <div class="divToDo" id="divTodoTask">
+                            <input type="checkbox" class="checkInput">
+                            <input class="todoText container" type="text" value="HAllo" readonly="readonly">
+                        </div>
+                        <div class="button">
+
+                            <button class="edit">
+                                <div class="editIcon fa fa-edit" aria-hidden="true"></div>
+                            </button>
+                            <button class="delete">
+                                <div class="deleteIcon fa fa-trash-o" aria-hidden="true"></div>
+                            </button>
+                        </div>
+
+                    </li>
+                    <li class="liElement">
+                        <div class="divToDo" id="divTodoTask">
+                            <input type="checkbox" class="checkInput">
+                            <input class="todoText container" type="text" value="HAllo" readonly="readonly">
+                        </div>
+                        <div class="button">
+                            <button class="delete">
+                                <div class="deleteIcon fa fa-trash-o" aria-hidden="true"></div>
+                            </button>
+                            <button class="edit">
+                                <div class="editIcon fa fa-edit" aria-hidden="true"></div>
+                            </button>
+                        </div>
+
+                    </li> -->
+
+
+                </ul>
+            </div>
+
+            <div class="deleteTaskSection">
+                <button id="deleteAllButton">Alle Löschen</button>
+                <button id="deleteNotCompletedButt">Übrige Aufgaben Löschen</button>
+                <button id="deleteCompleted"> Erledigte Aufgaben Löschen</button>
+
+            </div>
+
+
+        </section>
+    </main>
+    <script src="./js/index.js">
+    </script>
+</body>
+
+</html>

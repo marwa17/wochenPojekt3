@@ -1,0 +1,250 @@
+/* ********************** Start Allgemain Eigenschaft*******************/
+
+:root {
+    --main-color: #00bfff;
+    --second-color: #e5f5fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------- Ende Allgemain Eigenschaft--------------------- */
+
+/******************************start Header bereich******************/
+
+#header {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 110px;
+    padding-top: 20px;
+    padding-left: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+#header h1 {
+    margin: 0;
+    text-align: center;
+}
+#date {
+    font-weight: normal;
+}
+
+/* ------------------------- Ende Header bereich --------------------- */
+
+/******************************start main bereich******************/
+
+/****Begin TaskAdd-section ****/
+#add-section {
+    display: flex;
+    justify-content: center;
+}
+#neuTodo {
+    width: 50%;
+    margin-right: 10px;
+    padding: 5px 5px 5px 15px;
+}
+
+#addTodo {
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10%;
+}
+
+#addTodo :hover {
+    /* font-size: 20px; */
+    font-weight: bolder;
+}
+
+/*----End TaskAdd-section ----*/
+
+/****Begin tasks-section ****/
+
+.tasks-section {
+    background-color: var(--second-color);
+    width: 70%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.taskFilter {
+    width: 100%;
+}
+ul#filters {
+    display: flex;
+
+    /* background-color: firebrick; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#filters li {
+    margin-right: 30px;
+    list-style: none;
+}
+
+#filters li:hover {
+    margin-right: 30px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/*************taskList*********/
+.taskList {
+    margin-top: 10px;
+    background-color: var(--second-color);
+    width: 100%;
+    height: 300px;
+}
+
+ul#todoList {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
+.liElement {
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    margin: auto auto px auto;
+    padding: 2px;
+    text-align: left;
+    list-style: none;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#divTodoTask {
+    /* background-color: rgb(20, 119, 205); */
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+}
+
+.todoText {
+    color: blue;
+    background-color: var(--second-color);
+    /* background-color: red; */
+    border: none;
+    font-family: blod; /* Marwa */
+    width: 70%;
+}
+.todoText:focus {
+    outline: none;
+}
+.checkInput {
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+div.button {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70px;
+}
+button i {
+    /* margin: 5px; */
+    font-size: blod;
+}
+
+.saveIcon {
+    /* margin: 5px; */
+    color: rgb(243, 80, 16);
+
+    font-size: blod;
+}
+
+.edit {
+    /* margin: 0px 10px;   */ /*Löchen TODO*/
+    color: var(--main-color);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(183, 204, 240);
+    width: 25px;
+    height: 25px;
+}
+
+.edit:hover {
+    background-color: rgb(34, 118, 48);
+    color: white;
+}
+
+/* .deleteIcon {
+    padding: 10px
+} */
+
+.delete {
+    color: var(--main-color);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(183, 204, 240);
+    width: 25px;
+    height: 25px;
+}
+.delete:hover {
+    background-color: rgb(207, 21, 21);
+    color: white;
+}
+
+/****deleteTaskSection*****/
+.deleteTaskSection {
+    margin-top: 4px;
+    width: 100%;
+    height: auto;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.deleteTaskSection button {
+    /* margin-right: 10px; */
+    /* background-color: firebrick; */
+    border: none;
+    padding: 5px;
+    border: 2px solid #97e7ff;
+    background-color: var(--second-color);
+    border-radius: 5px;
+}
+.deleteTaskSection button:hover {
+    margin-right: 30px;
+    background-color: var(--main-color);
+    color: white;
+    border: 2px solid rgb(180, 187, 193);
+    border-radius: 5px;
+}
+/*----End tasks-section ----*/
+
+/*******/
+
+/* ------------------------- Ende main bereich --------------------- */
